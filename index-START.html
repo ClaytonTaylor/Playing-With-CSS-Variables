@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <script src="main.css"></script>
+  <!-- <script src="main.css"></script> -->
 
   <meta charset="UTF-8">
   <title>Scoped CSS Variables and JS</title>
@@ -23,6 +23,47 @@
   </div>
 
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+  <style>
+
+  :root {
+    --base: #ffc600;
+    --spacing: 25px;
+    --blur: 10px;
+  }
+
+  img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+  }
+
+  .hl {
+    color: var(--base);
+  }
+
+  body {
+    text-align: center;
+  }
+
+  body {
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+  .controls {
+    margin-bottom: 50px;
+  }
+
+  input {
+    width:100px;
+  }
+
+
+  </style>
 
   <script src="lib.js"></script>
 
